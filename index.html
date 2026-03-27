@@ -7,40 +7,363 @@
   <link rel="stylesheet" href="src/input.css" />
   <style>
     body { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #0f172a; }
+
+    /* 网站缩略图卡片 */
+    .site-card {
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .site-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+    }
+
+    /* 浏览器顶栏 */
+    .browser-bar {
+      background: #e5e7eb;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .browser-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+    }
+    .browser-dot:nth-child(1) { background: #ef4444; }
+    .browser-dot:nth-child(2) { background: #f59e0b; }
+    .browser-dot:nth-child(3) { background: #22c55e; }
+    .browser-url {
+      flex: 1;
+      background: #fff;
+      border-radius: 4px;
+      padding: 3px 10px;
+      font-size: 10px;
+      color: #9ca3af;
+      margin-left: 6px;
+      font-family: monospace;
+    }
+
+    /* 网站预览区 */
+    .preview {
+      height: 220px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* === 餐厅预览 === */
+    .preview-restaurant {
+      background: linear-gradient(135deg, #1c1108, #3d2410);
+    }
+    .preview-restaurant .preview-hero-img {
+      position: absolute; inset: 0;
+      background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80') center/cover;
+      opacity: 0.5;
+    }
+    .preview-restaurant .preview-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(28,17,8,0.7), rgba(28,17,8,0.3));
+    }
+    .preview-restaurant .preview-nav {
+      position: relative; z-index: 1;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 10px 16px;
+      color: #fff;
+    }
+    .preview-restaurant .preview-logo {
+      font-family: 'Noto Serif SC', serif;
+      font-weight: 700; font-size: 13px;
+      color: #d97706;
+    }
+    .preview-restaurant .preview-nav-links {
+      display: flex; gap: 12px;
+    }
+    .preview-restaurant .preview-nav-links span {
+      font-size: 9px; color: rgba(255,255,255,0.7);
+    }
+    .preview-restaurant .preview-nav-links span:first-child {
+      color: #fff;
+      border-bottom: 1.5px solid #d97706;
+      padding-bottom: 2px;
+    }
+    .preview-restaurant .preview-center {
+      position: relative; z-index: 1;
+      text-align: center;
+      padding-top: 50px;
+      color: #fff;
+    }
+    .preview-restaurant .preview-center h3 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 20px; font-weight: 600;
+      margin-bottom: 6px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    .preview-restaurant .preview-center p {
+      font-size: 9px; opacity: 0.8; margin-bottom: 14px;
+    }
+    .preview-restaurant .preview-btn {
+      display: inline-block;
+      background: #b45309; color: #fff;
+      padding: 5px 18px; border-radius: 6px;
+      font-size: 9px; font-weight: 500;
+    }
+    .preview-restaurant .preview-cards {
+      position: relative; z-index: 1;
+      display: flex; gap: 8px;
+      padding: 0 12px; margin-top: 20px;
+    }
+    .preview-restaurant .preview-card-item {
+      flex: 1; height: 50px; border-radius: 8px;
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(4px);
+    }
+
+    /* === 医美预览 === */
+    .preview-beauty {
+      background: linear-gradient(135deg, #1a0a14, #3d1228);
+    }
+    .preview-beauty .preview-hero-img {
+      position: absolute; inset: 0;
+      background: url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80') center/cover;
+      opacity: 0.45;
+    }
+    .preview-beauty .preview-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(26,10,20,0.65), rgba(26,10,20,0.25));
+    }
+    .preview-beauty .preview-nav {
+      position: relative; z-index: 1;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 10px 16px;
+      color: #fff;
+    }
+    .preview-beauty .preview-logo {
+      font-family: 'Noto Serif SC', serif;
+      font-weight: 700; font-size: 13px;
+      color: #ec4899;
+    }
+    .preview-beauty .preview-nav-links {
+      display: flex; gap: 12px;
+    }
+    .preview-beauty .preview-nav-links span {
+      font-size: 9px; color: rgba(255,255,255,0.7);
+    }
+    .preview-beauty .preview-nav-links span:first-child {
+      color: #fff;
+      border-bottom: 1.5px solid #ec4899;
+      padding-bottom: 2px;
+    }
+    .preview-beauty .preview-center {
+      position: relative; z-index: 1;
+      text-align: center;
+      padding-top: 50px;
+      color: #fff;
+    }
+    .preview-beauty .preview-center h3 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 20px; font-weight: 600;
+      margin-bottom: 6px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    .preview-beauty .preview-center p {
+      font-size: 9px; opacity: 0.8; margin-bottom: 14px;
+    }
+    .preview-beauty .preview-btn {
+      display: inline-block;
+      background: #db2777; color: #fff;
+      padding: 5px 18px; border-radius: 6px;
+      font-size: 9px; font-weight: 500;
+    }
+    .preview-beauty .preview-cards {
+      position: relative; z-index: 1;
+      display: flex; gap: 8px;
+      padding: 0 12px; margin-top: 20px;
+    }
+    .preview-beauty .preview-card-item {
+      flex: 1; height: 50px; border-radius: 8px;
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(4px);
+    }
+
+    /* === 科技预览 === */
+    .preview-tech {
+      background: linear-gradient(135deg, #0f172a, #1e3a5f);
+    }
+    .preview-tech .preview-hero-img {
+      position: absolute; inset: 0;
+      background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80') center/cover;
+      opacity: 0.5;
+    }
+    .preview-tech .preview-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(15,23,42,0.65), rgba(15,23,42,0.25));
+    }
+    .preview-tech .preview-nav {
+      position: relative; z-index: 1;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 10px 16px;
+      color: #fff;
+    }
+    .preview-tech .preview-logo {
+      font-family: 'Noto Serif SC', serif;
+      font-weight: 700; font-size: 13px;
+      color: #3b82f6;
+    }
+    .preview-tech .preview-nav-links {
+      display: flex; gap: 12px;
+    }
+    .preview-tech .preview-nav-links span {
+      font-size: 9px; color: rgba(255,255,255,0.7);
+    }
+    .preview-tech .preview-nav-links span:first-child {
+      color: #fff;
+      border-bottom: 1.5px solid #3b82f6;
+      padding-bottom: 2px;
+    }
+    .preview-tech .preview-center {
+      position: relative; z-index: 1;
+      text-align: center;
+      padding-top: 50px;
+      color: #fff;
+    }
+    .preview-tech .preview-center h3 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 20px; font-weight: 600;
+      margin-bottom: 6px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    .preview-tech .preview-center p {
+      font-size: 9px; opacity: 0.8; margin-bottom: 14px;
+    }
+    .preview-tech .preview-btn {
+      display: inline-block;
+      background: #2563eb; color: #fff;
+      padding: 5px 18px; border-radius: 6px;
+      font-size: 9px; font-weight: 500;
+    }
+    .preview-tech .preview-cards {
+      position: relative; z-index: 1;
+      display: flex; gap: 8px;
+      padding: 0 12px; margin-top: 20px;
+    }
+    .preview-tech .preview-card-item {
+      flex: 1; height: 50px; border-radius: 8px;
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(4px);
+    }
   </style>
 </head>
 <body>
-  <div class="text-center px-6">
-    <h1 class="text-3xl md:text-4xl font-bold text-white mb-4" style="font-family: var(--font-heading);">网站作品集</h1>
+  <div class="text-center px-6 py-16">
+    <h1 class="text-3xl md:text-4xl font-bold text-white mb-3" style="font-family: var(--font-heading);">网站作品集</h1>
     <p class="text-gray-400 mb-12 text-lg">精选企业官网案例展示</p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+
       <!-- 餐厅 -->
-      <a href="sites/restaurant/" class="group rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-amber-500/50 transition-all duration-300 hover:-translate-y-1">
-        <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80');"></div>
-        <div class="p-6">
-          <h2 class="text-white text-lg font-bold mb-2" style="font-family: var(--font-heading);">璟庭·粤式私房菜</h2>
-          <p class="text-gray-400 text-sm">高端餐厅官网 · 金色主题</p>
-          <span class="inline-block mt-4 text-amber-400 text-sm font-medium group-hover:translate-x-1 transition-transform">查看案例 →</span>
+      <a href="sites/restaurant/" class="site-card">
+        <div class="browser-bar">
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
+          <div class="browser-url">jingting.com</div>
+        </div>
+        <div class="preview preview-restaurant">
+          <div class="preview-hero-img"></div>
+          <div class="preview-overlay"></div>
+          <div class="preview-nav">
+            <span class="preview-logo">璟庭</span>
+            <div class="preview-nav-links">
+              <span>首页</span><span>关于</span><span>联系</span>
+            </div>
+          </div>
+          <div class="preview-center">
+            <h3>品味粤式经典</h3>
+            <p>传承百年匠心，私享珍馐美馔</p>
+            <span class="preview-btn">预约品鉴</span>
+          </div>
+          <div class="preview-cards">
+            <div class="preview-card-item"></div>
+            <div class="preview-card-item"></div>
+            <div class="preview-card-item"></div>
+          </div>
+        </div>
+        <div class="p-5 bg-gray-50">
+          <h2 class="text-gray-800 text-base font-bold mb-1" style="font-family: var(--font-heading);">璟庭·粤式私房菜</h2>
+          <p class="text-gray-400 text-xs">高端餐厅官网 · 金色主题 · 3页</p>
         </div>
       </a>
+
       <!-- 医美 -->
-      <a href="sites/beauty/" class="group rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-pink-500/50 transition-all duration-300 hover:-translate-y-1">
-        <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&q=80');"></div>
-        <div class="p-6">
-          <h2 class="text-white text-lg font-bold mb-2" style="font-family: var(--font-heading);">悦颜医疗美容</h2>
-          <p class="text-gray-400 text-sm">医美诊所官网 · 粉色主题</p>
-          <span class="inline-block mt-4 text-pink-400 text-sm font-medium group-hover:translate-x-1 transition-transform">查看案例 →</span>
+      <a href="sites/beauty/" class="site-card">
+        <div class="browser-bar">
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
+          <div class="browser-url">yueyan.com</div>
+        </div>
+        <div class="preview preview-beauty">
+          <div class="preview-hero-img"></div>
+          <div class="preview-overlay"></div>
+          <div class="preview-nav">
+            <span class="preview-logo">悦颜</span>
+            <div class="preview-nav-links">
+              <span>首页</span><span>关于</span><span>服务</span><span>案例</span>
+            </div>
+          </div>
+          <div class="preview-center">
+            <h3>发现更美的自己</h3>
+            <p>专业医疗美容，为您定制专属美丽方案</p>
+            <span class="preview-btn">了解更多</span>
+          </div>
+          <div class="preview-cards">
+            <div class="preview-card-item"></div>
+            <div class="preview-card-item"></div>
+            <div class="preview-card-item"></div>
+          </div>
+        </div>
+        <div class="p-5 bg-gray-50">
+          <h2 class="text-gray-800 text-base font-bold mb-1" style="font-family: var(--font-heading);">悦颜医疗美容</h2>
+          <p class="text-gray-400 text-xs">医美诊所官网 · 粉色主题 · 5页</p>
         </div>
       </a>
+
       <!-- 科技 -->
-      <a href="sites/tech/" class="group rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-1">
-        <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80');"></div>
-        <div class="p-6">
-          <h2 class="text-white text-lg font-bold mb-2" style="font-family: var(--font-heading);">云智科技</h2>
-          <p class="text-gray-400 text-sm">科技公司官网 · 蓝色主题</p>
-          <span class="inline-block mt-4 text-blue-400 text-sm font-medium group-hover:translate-x-1 transition-transform">查看案例 →</span>
+      <a href="sites/tech/" class="site-card">
+        <div class="browser-bar">
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
+          <div class="browser-url">yunzhi.tech</div>
+        </div>
+        <div class="preview preview-tech">
+          <div class="preview-hero-img"></div>
+          <div class="preview-overlay"></div>
+          <div class="preview-nav">
+            <span class="preview-logo">云智科技</span>
+            <div class="preview-nav-links">
+              <span>首页</span><span>关于</span><span>产品</span><span>案例</span>
+            </div>
+          </div>
+          <div class="preview-center">
+            <h3>数智化转型的可靠伙伴</h3>
+            <p>以AI和大数据技术，助力企业实现数字化转型</p>
+            <span class="preview-btn">免费试用</span>
+          </div>
+          <div class="preview-cards">
+            <div class="preview-card-item"></div>
+            <div class="preview-card-item"></div>
+            <div class="preview-card-item"></div>
+          </div>
+        </div>
+        <div class="p-5 bg-gray-50">
+          <h2 class="text-gray-800 text-base font-bold mb-1" style="font-family: var(--font-heading);">云智科技</h2>
+          <p class="text-gray-400 text-xs">科技公司官网 · 蓝色主题 · 5页</p>
         </div>
       </a>
+
     </div>
   </div>
   <script type="module" src="src/js/main.js"></script>
