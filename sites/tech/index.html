@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>云智科技 — 数智化转型的可靠伙伴</title>
+  <meta name="description" content="以云计算和人工智能技术，助力企业实现数字化升级。云智科技提供云计算平台、智能数据分析、AI解决方案和企业安全服务。">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="../../src/input.css">
+</head>
+<body>
+
+  <!-- ==================== 导航栏 ==================== -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+    <div class="container-custom flex items-center justify-between h-16 md:h-20">
+      <a href="index.html" class="flex items-center gap-2">
+        <div class="w-9 h-9 rounded-lg flex items-center justify-center text-white font-bold text-lg" style="background-color: var(--color-primary);">云</div>
+        <span class="text-lg font-semibold" style="font-family: var(--font-heading);">云智科技</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link active text-sm font-medium transition-colors">首页</a>
+        <a href="about.html" class="nav-link text-sm font-medium transition-colors">关于我们</a>
+        <a href="services.html" class="nav-link text-sm font-medium transition-colors">产品服务</a>
+        <a href="cases.html" class="nav-link text-sm font-medium transition-colors">客户案例</a>
+        <a href="contact.html" class="nav-link text-sm font-medium transition-colors">联系我们</a>
+      </div>
+      <button id="menu-btn" class="md:hidden p-2" aria-label="菜单">
+        <svg class="w-6 h-6 hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <!-- 移动端菜单 -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-lg border-t" style="border-color: var(--color-border);">
+      <div class="container-custom py-4 flex flex-col gap-3">
+        <a href="index.html" class="py-2 px-4 rounded-lg font-medium" style="color: var(--color-primary); background: var(--color-primary-50);">首页</a>
+        <a href="about.html" class="py-2 px-4 rounded-lg" style="color: var(--color-text);">关于我们</a>
+        <a href="services.html" class="py-2 px-4 rounded-lg" style="color: var(--color-text);">产品服务</a>
+        <a href="cases.html" class="py-2 px-4 rounded-lg" style="color: var(--color-text);">客户案例</a>
+        <a href="contact.html" class="py-2 px-4 rounded-lg" style="color: var(--color-text);">联系我们</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== Hero 区 ==================== -->
+  <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&q=80');">
+    <div class="hero-content max-w-4xl mx-auto px-4">
+      <h1 class="fade-up">数智化转型的可靠伙伴</h1>
+      <p class="fade-up">以云计算和人工智能技术，助力企业实现数字化升级，释放数据价值，驱动业务增长</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center fade-up">
+        <a href="contact.html" class="btn-primary text-lg px-8 py-4">免费咨询</a>
+        <a href="services.html" class="btn-secondary text-lg px-8 py-4" style="border-color: #fff; color: #fff;">了解服务</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 产品亮点 ==================== -->
+  <section class="py-20 md:py-28" style="background-color: var(--color-bg-alt);">
+    <div class="container-custom">
+      <h2 class="section-title fade-up" style="color: var(--color-text);">核心产品与服务</h2>
+      <div class="divider fade-up"></div>
+      <p class="section-subtitle fade-up">覆盖企业数字化全链路，从基础设施到智能应用一站式交付</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- 云计算平台 -->
+        <div class="card p-8 text-center scale-in">
+          <div class="w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center" style="background-color: var(--color-primary-50);">
+            <svg class="w-8 h-8" style="color: var(--color-primary);" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-3" style="font-family: var(--font-heading); color: var(--color-text);">云计算平台</h3>
+          <p style="color: var(--color-text-light); font-size: 0.95rem;">弹性扩展的云基础设施，提供计算、存储、网络一站式云服务，降低 IT 成本 40%</p>
+        </div>
+        <!-- 智能数据分析 -->
+        <div class="card p-8 text-center scale-in">
+          <div class="w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center" style="background-color: var(--color-primary-50);">
+            <svg class="w-8 h-8" style="color: var(--color-primary);" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-3" style="font-family: var(--font-heading); color: var(--color-text);">智能数据分析</h3>
+          <p style="color: var(--color-text-light); font-size: 0.95rem;">实时采集企业数据，智能生成可视化报表，精准预测业务趋势，辅助科学决策</p>
+        </div>
+        <!-- AI 解决方案 -->
+        <div class="card p-8 text-center scale-in">
+          <div class="w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center" style="background-color: var(--color-primary-50);">
+            <svg class="w-8 h-8" style="color: var(--color-primary);" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-3" style="font-family: var(--font-heading); color: var(--color-text);">AI 解决方案</h3>
+          <p style="color: var(--color-text-light); font-size: 0.95rem;">基于深度学习的 AI 能力平台，提供 NLP、图像识别、智能推荐等企业级 AI 服务</p>
+        </div>
+        <!-- 企业安全 -->
+        <div class="card p-8 text-center scale-in">
+          <div class="w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center" style="background-color: var(--color-primary-50);">
+            <svg class="w-8 h-8" style="color: var(--color-primary);" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-3" style="font-family: var(--font-heading); color: var(--color-text);">企业安全</h3>
+          <p style="color: var(--color-text-light); font-size: 0.95rem;">等保合规、数据加密、实时威胁检测，构建全方位安全防护体系，保障业务安全运行</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 数据统计 ==================== -->
+  <section class="py-20 md:py-28" style="background-color: var(--color-bg-dark);">
+    <div class="container-custom">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div class="text-center fade-up">
+          <div class="text-4xl md:text-5xl font-bold text-white mb-2" style="font-family: var(--font-heading);">
+            <span data-count="500" data-suffix="+">0</span>
+          </div>
+          <div class="text-white/60 text-sm md:text-base">服务企业数</div>
+        </div>
+        <div class="text-center fade-up">
+          <div class="text-4xl md:text-5xl font-bold text-white mb-2" style="font-family: var(--font-heading);">
+            <span data-count="1200" data-suffix="+">0</span>
+          </div>
+          <div class="text-white/60 text-sm md:text-base">项目交付数</div>
+        </div>
+        <div class="text-center fade-up">
+          <div class="text-4xl md:text-5xl font-bold text-white mb-2" style="font-family: var(--font-heading);">
+            <span data-count="30" data-suffix="分钟">0</span>
+          </div>
+          <div class="text-white/60 text-sm md:text-base">平均响应时间</div>
+        </div>
+        <div class="text-center fade-up">
+          <div class="text-4xl md:text-5xl font-bold text-white mb-2" style="font-family: var(--font-heading);">
+            <span data-count="98" data-suffix="%">0</span>
+          </div>
+          <div class="text-white/60 text-sm md:text-base">客户续约率</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 合作伙伴 ==================== -->
+  <section class="py-20 md:py-28" style="background-color: var(--color-bg);">
+    <div class="container-custom">
+      <h2 class="section-title fade-up" style="color: var(--color-text);">值得信赖的合作伙伴</h2>
+      <div class="divider fade-up"></div>
+      <p class="section-subtitle fade-up">与超过 500 家企业建立了长期合作关系</p>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 fade-up">
+        <div class="card p-6 flex items-center justify-center" style="min-height: 100px;">
+          <span class="text-lg font-semibold" style="color: var(--color-text-muted); font-family: var(--font-heading);">鼎盛集团</span>
+        </div>
+        <div class="card p-6 flex items-center justify-center" style="min-height: 100px;">
+          <span class="text-lg font-semibold" style="color: var(--color-text-muted); font-family: var(--font-heading);">汇通银行</span>
+        </div>
+        <div class="card p-6 flex items-center justify-center" style="min-height: 100px;">
+          <span class="text-lg font-semibold" style="color: var(--color-text-muted); font-family: var(--font-heading);">远洋制造</span>
+        </div>
+        <div class="card p-6 flex items-center justify-center" style="min-height: 100px;">
+          <span class="text-lg font-semibold" style="color: var(--color-text-muted); font-family: var(--font-heading);">康宁医疗</span>
+        </div>
+        <div class="card p-6 flex items-center justify-center" style="min-height: 100px;">
+          <span class="text-lg font-semibold" style="color: var(--color-text-muted); font-family: var(--font-heading);">启航教育</span>
+        </div>
+        <div class="card p-6 flex items-center justify-center" style="min-height: 100px;">
+          <span class="text-lg font-semibold" style="color: var(--color-text-muted); font-family: var(--font-heading);">星辰物流</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA ==================== -->
+  <section class="py-20 md:py-28 relative overflow-hidden" style="background-color: var(--color-primary);">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 right-0 w-96 h-96 rounded-full" style="background: rgba(255,255,255,0.1); filter: blur(80px); transform: translate(30%, -30%);"></div>
+      <div class="absolute bottom-0 left-0 w-96 h-96 rounded-full" style="background: rgba(255,255,255,0.1); filter: blur(80px); transform: translate(-30%, 30%);"></div>
+    </div>
+    <div class="container-custom text-center relative z-10">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 fade-up" style="font-family: var(--font-heading);">立即开启数字化转型之旅</h2>
+      <p class="text-white/80 text-lg mb-8 max-w-2xl mx-auto fade-up">专业团队一对一服务，为您提供定制化解决方案，让技术真正赋能业务增长</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center fade-up">
+        <a href="contact.html" class="inline-flex items-center justify-center px-8 py-4 bg-white font-semibold rounded-lg transition-all hover:shadow-xl hover:-translate-y-1" style="color: var(--color-primary);">免费试用</a>
+        <a href="cases.html" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg transition-all hover:bg-white/10">查看案例</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 页脚 ==================== -->
+  <footer class="py-16" style="background-color: var(--color-bg-dark);">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <!-- 品牌 -->
+        <div class="md:col-span-1">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-9 h-9 rounded-lg flex items-center justify-center text-white font-bold text-lg" style="background-color: var(--color-primary);">云</div>
+            <span class="text-lg font-semibold text-white" style="font-family: var(--font-heading);">云智科技</span>
+          </div>
+          <p class="text-white/50 text-sm leading-relaxed">以云计算和人工智能技术，助力企业实现数字化升级，释放数据价值。</p>
+        </div>
+        <!-- 产品服务 -->
+        <div>
+          <h4 class="text-white font-semibold mb-4">产品服务</h4>
+          <ul class="space-y-2">
+            <li><a href="services.html" class="text-white/50 text-sm hover:text-white transition-colors">云计算平台</a></li>
+            <li><a href="services.html" class="text-white/50 text-sm hover:text-white transition-colors">智能数据分析</a></li>
+            <li><a href="services.html" class="text-white/50 text-sm hover:text-white transition-colors">AI 解决方案</a></li>
+            <li><a href="services.html" class="text-white/50 text-sm hover:text-white transition-colors">企业安全</a></li>
+          </ul>
+        </div>
+        <!-- 关于 -->
+        <div>
+          <h4 class="text-white font-semibold mb-4">关于我们</h4>
+          <ul class="space-y-2">
+            <li><a href="about.html" class="text-white/50 text-sm hover:text-white transition-colors">公司介绍</a></li>
+            <li><a href="about.html" class="text-white/50 text-sm hover:text-white transition-colors">核心团队</a></li>
+            <li><a href="cases.html" class="text-white/50 text-sm hover:text-white transition-colors">客户案例</a></li>
+            <li><a href="contact.html" class="text-white/50 text-sm hover:text-white transition-colors">联系我们</a></li>
+          </ul>
+        </div>
+        <!-- 联系方式 -->
+        <div>
+          <h4 class="text-white font-semibold mb-4">联系方式</h4>
+          <ul class="space-y-2 text-white/50 text-sm">
+            <li>北京市海淀区中关村科技园</li>
+            <li>电话：400-888-9999</li>
+            <li>邮箱：contact@yunzhi.tech</li>
+            <li>工作时间：周一至周五 9:00-18:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-8 text-center">
+        <p class="text-white/30 text-sm">&copy; 2025 云智科技. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../../src/js/main.js"></script>
+</body>
+</html>

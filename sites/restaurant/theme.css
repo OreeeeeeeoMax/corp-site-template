@@ -1,0 +1,28 @@
+/* ============================================
+   餐厅主题 — 金色/棕色系
+   ============================================ */
+:root {
+  --color-primary: #b45309;
+  --color-primary-light: #d97706;
+  --color-primary-dark: #92400e;
+  --color-primary-50: #fffbeb;
+  --color-primary-100: #fef3c7;
+
+  --color-accent: #78350f;
+  --color-accent-light: #92400e;
+
+  --color-bg: #fffbf5;
+  --color-bg-alt: #fef3c7;
+  --color-bg-dark: #1c1108;
+
+  --color-text: #1c1108;
+  --color-text-light: #78716c;
+  --color-text-muted: #a8a29e;
+  --color-border: #e7e5e4;
+
+  --font-heading: 'Noto Serif SC', serif;
+  --font-body: 'Noto Sans SC', system-ui, sans-serif;
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+}

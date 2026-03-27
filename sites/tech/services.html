@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>产品服务 — 云智科技</title>
+  <meta name="description" content="云智科技提供云计算平台、智能数据分析、AI解决方案和企业安全四大核心产品服务，助力企业数字化转型。">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="../../src/input.css">
+</head>
+<body>
+
+  <!-- ==================== 导航栏 ==================== -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+    <div class="container-custom flex items-center justify-between h-16 md:h-20">
+      <a href="index.html" class="flex items-center gap-2">
+        <div class="w-9 h-9 rounded-lg flex items-center justify-center text-white font-bold text-lg" style="background-color: var(--color-primary);">云</div>
+        <span class="text-lg font-semibold" style="font-family: var(--font-heading);">云智科技</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link text-sm font-medium transition-colors">首页</a>
+        <a href="about.html" class="nav-link text-sm font-medium transition-colors">关于我们</a>
+        <a href="services.html" class="nav-link active text-sm font-medium transition-colors">产品服务</a>
+        <a href="cases.html" class="nav-link text-sm font-medium transition-colors">客户案例</a>
+        <a href="contact.html" class="nav-link text-sm font-medium transition-colors">联系我们</a>
+      </div>
+      <button id="menu-btn" class="md:hidden p-2" aria-label="菜单">
+        <svg class="w-6 h-6 hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-lg border-t" style="border-color: var(--color-border);">
+      <div class="container-custom py-4 flex flex-col gap-3">
+        <a href="index.html" class="py-2 px-4 rounded-lg" style="color: var(--color-text);">首页</a>
+        <a href="about.html" class="py-2 px-4 rounded-lg" style="color: var(--color-text);">关于我们</a>
+        <a href="services.html" class="py-2 px-4 rounded-lg font-medium" style="color: var(--color-primary); background: var(--color-primary-50);">产品服务</a>
+        <a href="cases.html" class="py-2 px-4 rounded-lg" style="color: var(--color-text);">客户案例</a>
+        <a href="contact.html" class="py-2 px-4 rounded-lg" style="color: var(--color-text);">联系我们</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== 页面头部 ==================== -->
+  <section class="pt-28 md:pt-36 pb-16 md:pb-20" style="background-color: var(--color-bg-alt);">
+    <div class="container-custom text-center">
+      <h1 class="section-title fade-up" style="color: var(--color-text);">产品服务</h1>
+      <div class="divider fade-up"></div>
+      <p class="section-subtitle fade-up">覆盖企业数字化全链路，提供从基础设施到智能应用的一站式解决方案</p>
+    </div>
+  </section>
+
+  <!-- ==================== 核心产品 ==================== -->
+  <section class="py-20 md:py-28" style="background-color: var(--color-bg);">
+    <div class="container-custom space-y-16">
+
+      <!-- 产品1：云计算平台 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div class="fade-left">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-6" style="background-color: var(--color-primary-50);">
+            <svg class="w-7 h-7" style="color: var(--color-primary);" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold mb-4" style="font-family: var(--font-heading); color: var(--color-text);">云计算平台</h2>
+          <p class="mb-6" style="color: var(--color-text-light); line-height: 1.8;">基于自研的分布式架构，提供弹性、稳定、安全的云基础设施服务。支持按需扩缩容，帮助企业降低 IT 建设和运维成本，让技术团队专注于核心业务创新。</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 flex-shrink-0" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div>
+                <span class="font-medium" style="color: var(--color-text);">弹性计算</span>
+                <span class="text-sm ml-2" style="color: var(--color-text-light);">秒级扩缩容，按需付费，99.99% 可用性保障</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 flex-shrink-0" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div>
+                <span class="font-medium" style="color: var(--color-text);">存储服务</span>
+                <span class="text-sm ml-2" style="color: var(--color-text-light);">对象存储、块存储、文件存储多种方案，数据持久性 99.9999999%</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 flex-shrink-0" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div>
+                <span class="font-medium" style="color: var(--color-text);">网络加速</span>
+                <span class="text-sm ml-2" style="color: var(--color-text-light);">全球 CDN 节点加速，智能 DNS 解析，保障极速访问体验</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 flex-shrink-0" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div>
+                <span class="font-medium" style="color: var(--color-text);">容器服务</span>
+                <span class="text-sm ml-2" style="color: var(--color-text-light);">Kubernetes 原生支持，微服务架构一键部署，DevOps 全流程打通</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="fade-right">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80" alt="云计算平台" class="rounded-2xl w-full" style="box-shadow: var(--shadow-xl);">
+        </div>
+      </div>
+
+      <!-- 产品2：智能数据分析 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div class="fade-left order-2 lg:order-1">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="智能数据分析" class="rounded-2xl w-full" style="box-shadow: var(--shadow-xl);">
+        </div>
+        <div class="fade-right order-1 lg:order-2">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-6" style="background-color: var(--color-primary-50);">
+            <svg class="w-7 h-7" style="color: var(--color-primary);" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold mb-4" style="font-family: var(--font-heading); color: var(--color-text);">智能数据分析</h2>
+          <p class="mb-6" style="color: var(--color-text-light); line-height: 1.8;">打通企业数据孤岛，实现全链路数据采集、治理与分析。通过 AI 驱动的智能引擎，将海量数据转化为可执行的业务洞察，帮助企业实现数据驱动的科学决策。</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 flex-shrink-0" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div>
+                <span class="font-medium" style="color: var(--color-text);">实时数据采集</span>
+                <span class="text-sm ml-2" style="color: var(--color-text-light);">支持 100+ 数据源接入，毫秒级实时采集，统一数据标准</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 flex-shrink-0" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div>
+                <span class="font-medium" style="color: var(--color-text);">可视化报表</span>
+                <span class="text-sm ml-2" style="color: var(--color-text-light);">拖拽式报表设计，50+ 图表组件，支持大屏展示和移动端查看</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 flex-shrink-0" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div>
+                <span class="font-medium" style="color: var(--color-text);">预测分析</span>
+                <span class="text-sm ml-2" style="color: var(--color-text-light);">内置机器学习模型，自动发现数据规律，精准预测业务趋势</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 flex-shrink-0" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div>
+                <span class="font-medium" style="color: var(--color-text);">数据治理</span>
+                <span class="text-sm ml-2" style="color: var(--color-text-light);">数据质量管理、血缘分析、权限管控，构建可信数据资产</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 产品3：AI 解决方案 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div class="fade-left">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-6" style="background-color: var(--color-primary-50);">
+            <svg class="w-7 h-7" style="color: var(--color-primary);" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold mb-4" style="font-family: var(--font-heading); color: var(--color-text);">AI 解决方案</h2>
+          <p class="mb-6" style="color: var(--color-text-light); line-height: 1.8;">基于自研大模型和深度学习框架，为企业提供开箱即用的 AI 能力。无需深厚的技术积累，即可将先进的 AI 技术融入业务流程，实现效率跃升。</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 flex-shrink-0" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div>
+                <span class="font-medium" style="color: var(--color-text);">自然语言处理</span>
+                <span class="text-sm ml-2" style="color: var(--color-text-light);">智能客服、文本分类、情感分析、自动摘要，提升交互效率</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 flex-shrink-0" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div>
+                <span class="font-medium" style="color: var(--color-text);">图像识别</span>
+                <span class="text-sm ml-2" style="color: var(--color-text-light);">OCR 文字识别、人脸检测、缺陷检测，准确率达 99.5%</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 flex-shrink-0" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div>
+                <span class="font-medium" style="color: var(--color-text);">智能推荐</span>
+                <span class="text-sm ml-2" style="color: var(--color-text-light);">千人千面个性化推荐引擎，转化率提升 35% 以上</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 flex-shrink-0" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div>
+                <span class="font-medium" style="color: var(--color-text);">大模型服务</span>
+                <span class="text-sm ml-2" style="color: var(--color-text-light);">私有化部署企业专属大模型，支持知识库接入和 Fine-tuning</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="fade-right">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80" alt="AI解决方案" class="rounded-2xl w-full" style="box-shadow: var(--shadow-xl);">
+        </div>
+      </div>
+
+      <!-- 产品4：企业安全 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div class="fade-left order-2 lg:order-1">
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?w=800&q=80" alt="企业安全" class="rounded-2xl w-full" style="box-shadow: var(--shadow-xl);">
+        </div>
+        <div class="fade-right order-1 lg:order-2">
+          <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-6" style="background-color: var(--color-primary-50);">
+            <svg class="w-7 h-7" style="color: var(--color-primary);" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold mb-4" style="font-family: var(--font-heading); color: var(--color-text);">企业安全</h2>
+          <p class="mb-6" style="color: var(--color-text-light); line-height: 1.8;">构建纵深防御体系，覆盖网络安全、数据安全、应用安全三大维度。通过智能安全运营中心，实现 7x24 小时实时威胁检测与响应。</p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 flex-shrink-0" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div>
+                <span class="font-medium" style="color: var(--color-text);">等保合规</span>
+                <span class="text-sm ml-2" style="color: var(--color-text-light);">满足等保 2.0 三级要求，协助企业快速通过合规审计</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 flex-shrink-0" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div>
+                <span class="font-medium" style="color: var(--color-text);">数据加密</span>
+                <span class="text-sm ml-2" style="color: var(--color-text-light);">传输层 TLS 加密 + 存储层 AES-256 加密，全链路数据保护</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 flex-shrink-0" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div>
+                <span class="font-medium" style="color: var(--color-text);">威胁检测</span>
+                <span class="text-sm ml-2" style="color: var(--color-text-light);">AI 驱动的安全态势感知，秒级威胁发现，自动阻断攻击</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 flex-shrink-0" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div>
+                <span class="font-medium" style="color: var(--color-text);">安全审计</span>
+                <span class="text-sm ml-2" style="color: var(--color-text-light);">全量操作日志记录，可视化审计报告，满足监管追溯需求</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 技术架构 ==================== -->
+  <section class="py-20 md:py-28" style="background-color: var(--color-bg-alt);">
+    <div class="container-custom">
+      <h2 class="section-title fade-up" style="color: var(--color-text);">技术架构</h2>
+      <div class="divider fade-up"></div>
+      <p class="section-subtitle fade-up">分层解耦、高可用、可扩展的企业级技术架构</p>
+
+      <div class="max-w-3xl mx-auto space-y-4 fade-up">
+        <!-- 应用层 -->
+        <div class="rounded-xl p-6 text-center text-white font-semibold" style="background-color: var(--color-primary);">
+          <div class="text-sm opacity-80 mb-1">应用层</div>
+          <div class="text-sm">Web 应用 / 移动端 / API 网关 / 小程序</div>
+        </div>
+        <!-- 箭头 -->
+        <div class="flex justify-center">
+          <svg class="w-6 h-6" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+        </div>
+        <!-- 服务层 -->
+        <div class="rounded-xl p-6 text-center font-semibold" style="background-color: var(--color-primary-dark); color: white;">
+          <div class="text-sm opacity-80 mb-1">服务层</div>
+          <div class="text-sm">微服务 / 消息队列 / 分布式缓存 / 任务调度</div>
+        </div>
+        <!-- 箭头 -->
+        <div class="flex justify-center">
+          <svg class="w-6 h-6" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+        </div>
+        <!-- 数据层 -->
+        <div class="rounded-xl p-6 text-center font-semibold" style="background-color: var(--color-bg-dark); color: white;">
+          <div class="text-sm opacity-80 mb-1">数据层</div>
+          <div class="text-sm">关系型数据库 / NoSQL / 数据湖 / 搜索引擎</div>
+        </div>
+        <!-- 箭头 -->
+        <div class="flex justify-center">
+          <svg class="w-6 h-6" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+        </div>
+        <!-- 基础设施层 -->
+        <div class="rounded-xl p-6 text-center font-semibold" style="background-color: #334155; color: white;">
+          <div class="text-sm opacity-80 mb-1">基础设施层</div>
+          <div class="text-sm">云计算 / 容器编排 / CI/CD / 监控告警</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA ==================== -->
+  <section class="py-20 md:py-28" style="background-color: var(--color-primary);">
+    <div class="container-custom text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 fade-up" style="font-family: var(--font-heading);">找到适合您的解决方案</h2>
+      <p class="text-white/80 text-lg mb-8 max-w-2xl mx-auto fade-up">专业顾问为您量身定制技术方案，让每一分投入都产生价值</p>
+      <a href="contact.html" class="inline-flex items-center justify-center px-8 py-4 bg-white font-semibold rounded-lg transition-all hover:shadow-xl hover:-translate-y-1 fade-up" style="color: var(--color-primary);">免费咨询</a>
+    </div>
+  </section>
+
+  <!-- ==================== 页脚 ==================== -->
+  <footer class="py-16" style="background-color: var(--color-bg-dark);">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div class="md:col-span-1">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-9 h-9 rounded-lg flex items-center justify-center text-white font-bold text-lg" style="background-color: var(--color-primary);">云</div>
+            <span class="text-lg font-semibold text-white" style="font-family: var(--font-heading);">云智科技</span>
+          </div>
+          <p class="text-white/50 text-sm leading-relaxed">以云计算和人工智能技术，助力企业实现数字化升级，释放数据价值。</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">产品服务</h4>
+          <ul class="space-y-2">
+            <li><a href="services.html" class="text-white/50 text-sm hover:text-white transition-colors">云计算平台</a></li>
+            <li><a href="services.html" class="text-white/50 text-sm hover:text-white transition-colors">智能数据分析</a></li>
+            <li><a href="services.html" class="text-white/50 text-sm hover:text-white transition-colors">AI 解决方案</a></li>
+            <li><a href="services.html" class="text-white/50 text-sm hover:text-white transition-colors">企业安全</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">关于我们</h4>
+          <ul class="space-y-2">
+            <li><a href="about.html" class="text-white/50 text-sm hover:text-white transition-colors">公司介绍</a></li>
+            <li><a href="about.html" class="text-white/50 text-sm hover:text-white transition-colors">核心团队</a></li>
+            <li><a href="cases.html" class="text-white/50 text-sm hover:text-white transition-colors">客户案例</a></li>
+            <li><a href="contact.html" class="text-white/50 text-sm hover:text-white transition-colors">联系我们</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">联系方式</h4>
+          <ul class="space-y-2 text-white/50 text-sm">
+            <li>北京市海淀区中关村科技园</li>
+            <li>电话：400-888-9999</li>
+            <li>邮箱：contact@yunzhi.tech</li>
+            <li>工作时间：周一至周五 9:00-18:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-8 text-center">
+        <p class="text-white/30 text-sm">&copy; 2025 云智科技. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../../src/js/main.js"></script>
+</body>
+</html>

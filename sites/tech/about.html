@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我们 — 云智科技</title>
+  <meta name="description" content="了解云智科技的公司使命、愿景、核心团队和发展历程，我们致力于成为最值得信赖的企业数字化服务商。">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="../../src/input.css">
+</head>
+<body>
+
+  <!-- ==================== 导航栏 ==================== -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+    <div class="container-custom flex items-center justify-between h-16 md:h-20">
+      <a href="index.html" class="flex items-center gap-2">
+        <div class="w-9 h-9 rounded-lg flex items-center justify-center text-white font-bold text-lg" style="background-color: var(--color-primary);">云</div>
+        <span class="text-lg font-semibold" style="font-family: var(--font-heading);">云智科技</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link text-sm font-medium transition-colors">首页</a>
+        <a href="about.html" class="nav-link active text-sm font-medium transition-colors">关于我们</a>
+        <a href="services.html" class="nav-link text-sm font-medium transition-colors">产品服务</a>
+        <a href="cases.html" class="nav-link text-sm font-medium transition-colors">客户案例</a>
+        <a href="contact.html" class="nav-link text-sm font-medium transition-colors">联系我们</a>
+      </div>
+      <button id="menu-btn" class="md:hidden p-2" aria-label="菜单">
+        <svg class="w-6 h-6 hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-lg border-t" style="border-color: var(--color-border);">
+      <div class="container-custom py-4 flex flex-col gap-3">
+        <a href="index.html" class="py-2 px-4 rounded-lg" style="color: var(--color-text);">首页</a>
+        <a href="about.html" class="py-2 px-4 rounded-lg font-medium" style="color: var(--color-primary); background: var(--color-primary-50);">关于我们</a>
+        <a href="services.html" class="py-2 px-4 rounded-lg" style="color: var(--color-text);">产品服务</a>
+        <a href="cases.html" class="py-2 px-4 rounded-lg" style="color: var(--color-text);">客户案例</a>
+        <a href="contact.html" class="py-2 px-4 rounded-lg" style="color: var(--color-text);">联系我们</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== 页面头部 ==================== -->
+  <section class="pt-28 md:pt-36 pb-16 md:pb-20" style="background-color: var(--color-bg-alt);">
+    <div class="container-custom text-center">
+      <h1 class="section-title fade-up" style="color: var(--color-text);">关于我们</h1>
+      <div class="divider fade-up"></div>
+      <p class="section-subtitle fade-up">以技术为核，以客户为本，构建数字化未来</p>
+    </div>
+  </section>
+
+  <!-- ==================== 公司介绍 ==================== -->
+  <section class="py-20 md:py-28" style="background-color: var(--color-bg);">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <!-- 左侧文字 -->
+        <div class="fade-left">
+          <h2 class="text-2xl md:text-3xl font-bold mb-6" style="font-family: var(--font-heading); color: var(--color-text);">使命与愿景</h2>
+          <div class="space-y-6" style="color: var(--color-text-light); line-height: 1.8;">
+            <div>
+              <h3 class="text-lg font-semibold mb-2" style="color: var(--color-primary);">我们的使命</h3>
+              <p>让每一家企业都能便捷地享受先进技术带来的红利，以云计算和人工智能降低数字化转型门槛，助力中国企业在数字经济时代实现跨越式发展。</p>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold mb-2" style="color: var(--color-primary);">我们的愿景</h3>
+              <p>成为亚太地区最具影响力的企业数字化服务商，打造开放、智能、安全的数字化生态平台。</p>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold mb-2" style="color: var(--color-primary);">核心价值观</h3>
+              <div class="grid grid-cols-2 gap-3 mt-3">
+                <div class="flex items-center gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span class="text-sm">客户至上</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span class="text-sm">技术创新</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span class="text-sm">安全可靠</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-5 h-5 flex-shrink-0" style="color: var(--color-primary);" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span class="text-sm">开放协作</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 右侧图片 -->
+        <div class="fade-right">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="云智科技办公室" class="rounded-2xl w-full" style="box-shadow: var(--shadow-xl);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 团队展示 ==================== -->
+  <section class="py-20 md:py-28" style="background-color: var(--color-bg-alt);">
+    <div class="container-custom">
+      <h2 class="section-title fade-up" style="color: var(--color-text);">核心团队</h2>
+      <div class="divider fade-up"></div>
+      <p class="section-subtitle fade-up">汇聚顶尖技术人才，打造行业领先的产品与服务</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- 成员1 -->
+        <div class="card p-6 text-center scale-in">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80" alt="张明远" class="w-28 h-28 rounded-full mx-auto mb-5 object-cover" style="border: 3px solid var(--color-primary-100);">
+          <h3 class="text-lg font-semibold mb-1" style="font-family: var(--font-heading); color: var(--color-text);">张明远</h3>
+          <p class="text-sm mb-3" style="color: var(--color-primary);">创始人 &amp; CEO</p>
+          <p class="text-sm" style="color: var(--color-text-light);">前阿里云技术总监，15年云计算经验，带领团队服务超过300家大型企业</p>
+        </div>
+        <!-- 成员2 -->
+        <div class="card p-6 text-center scale-in">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80" alt="李思琪" class="w-28 h-28 rounded-full mx-auto mb-5 object-cover" style="border: 3px solid var(--color-primary-100);">
+          <h3 class="text-lg font-semibold mb-1" style="font-family: var(--font-heading); color: var(--color-text);">李思琪</h3>
+          <p class="text-sm mb-3" style="color: var(--color-primary);">CTO &amp; 联合创始人</p>
+          <p class="text-sm" style="color: var(--color-text-light);">清华大学博士，人工智能领域专家，发表顶会论文30余篇，多项专利持有人</p>
+        </div>
+        <!-- 成员3 -->
+        <div class="card p-6 text-center scale-in">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&q=80" alt="王浩然" class="w-28 h-28 rounded-full mx-auto mb-5 object-cover" style="border: 3px solid var(--color-primary-100);">
+          <h3 class="text-lg font-semibold mb-1" style="font-family: var(--font-heading); color: var(--color-text);">王浩然</h3>
+          <p class="text-sm mb-3" style="color: var(--color-primary);">产品副总裁</p>
+          <p class="text-sm" style="color: var(--color-text-light);">前腾讯产品总监，擅长企业级SaaS产品设计与用户增长策略</p>
+        </div>
+        <!-- 成员4 -->
+        <div class="card p-6 text-center scale-in">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&q=80" alt="陈雨桐" class="w-28 h-28 rounded-full mx-auto mb-5 object-cover" style="border: 3px solid var(--color-primary-100);">
+          <h3 class="text-lg font-semibold mb-1" style="font-family: var(--font-heading); color: var(--color-text);">陈雨桐</h3>
+          <p class="text-sm mb-3" style="color: var(--color-primary);">安全总监</p>
+          <p class="text-sm" style="color: var(--color-text-light);">CISSP认证专家，曾任国家信息安全中心高级工程师，主导多个等保项目</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 发展历程 ==================== -->
+  <section class="py-20 md:py-28" style="background-color: var(--color-bg);">
+    <div class="container-custom">
+      <h2 class="section-title fade-up" style="color: var(--color-text);">发展历程</h2>
+      <div class="divider fade-up"></div>
+      <p class="section-subtitle fade-up">从初创团队到行业领先，我们持续前行</p>
+
+      <div class="max-w-3xl mx-auto relative">
+        <!-- 时间线竖线 -->
+        <div class="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5" style="background-color: var(--color-primary); transform: translateX(-50%);"></div>
+
+        <!-- 2018 -->
+        <div class="relative flex flex-col md:flex-row md:items-center mb-12 fade-up">
+          <div class="md:w-1/2 md:pr-12 md:text-right pl-16 md:pl-0">
+            <div class="text-2xl font-bold mb-2" style="font-family: var(--font-heading); color: var(--color-primary);">2018</div>
+            <h3 class="font-semibold mb-1" style="color: var(--color-text);">公司成立</h3>
+            <p class="text-sm" style="color: var(--color-text-light);">云智科技在北京中关村正式成立，获得天使轮融资 2000 万元，核心团队 5 人</p>
+          </div>
+          <div class="absolute left-6 md:left-1/2 w-4 h-4 rounded-full border-4 border-white" style="background-color: var(--color-primary); transform: translate(-50%, 0); top: 4px; box-shadow: 0 0 0 2px var(--color-primary);"></div>
+          <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+        </div>
+
+        <!-- 2019 -->
+        <div class="relative flex flex-col md:flex-row md:items-center mb-12 fade-up">
+          <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+          <div class="absolute left-6 md:left-1/2 w-4 h-4 rounded-full border-4 border-white" style="background-color: var(--color-primary); transform: translate(-50%, 0); top: 4px; box-shadow: 0 0 0 2px var(--color-primary);"></div>
+          <div class="md:w-1/2 md:pl-12 pl-16">
+            <div class="text-2xl font-bold mb-2" style="font-family: var(--font-heading); color: var(--color-primary);">2019</div>
+            <h3 class="font-semibold mb-1" style="color: var(--color-text);">云计算平台发布</h3>
+            <p class="text-sm" style="color: var(--color-text-light);">自主研发的云计算平台正式上线，首年服务企业超过 50 家，获 A 轮融资 1 亿元</p>
+          </div>
+        </div>
+
+        <!-- 2020 -->
+        <div class="relative flex flex-col md:flex-row md:items-center mb-12 fade-up">
+          <div class="md:w-1/2 md:pr-12 md:text-right pl-16 md:pl-0">
+            <div class="text-2xl font-bold mb-2" style="font-family: var(--font-heading); color: var(--color-primary);">2020</div>
+            <h3 class="font-semibold mb-1" style="color: var(--color-text);">AI 产品线启动</h3>
+            <p class="text-sm" style="color: var(--color-text-light);">成立人工智能实验室，推出智能数据分析和 AI 解决方案，团队扩展至 80 人</p>
+          </div>
+          <div class="absolute left-6 md:left-1/2 w-4 h-4 rounded-full border-4 border-white" style="background-color: var(--color-primary); transform: translate(-50%, 0); top: 4px; box-shadow: 0 0 0 2px var(--color-primary);"></div>
+          <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+        </div>
+
+        <!-- 2022 -->
+        <div class="relative flex flex-col md:flex-row md:items-center mb-12 fade-up">
+          <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+          <div class="absolute left-6 md:left-1/2 w-4 h-4 rounded-full border-4 border-white" style="background-color: var(--color-primary); transform: translate(-50%, 0); top: 4px; box-shadow: 0 0 0 2px var(--color-primary);"></div>
+          <div class="md:w-1/2 md:pl-12 pl-16">
+            <div class="text-2xl font-bold mb-2" style="font-family: var(--font-heading); color: var(--color-primary);">2022</div>
+            <h3 class="font-semibold mb-1" style="color: var(--color-text);">B 轮融资 &amp; 规模化</h3>
+            <p class="text-sm" style="color: var(--color-text-light);">完成 B 轮融资 5 亿元，累计服务企业突破 300 家，设立上海、深圳分公司</p>
+          </div>
+        </div>
+
+        <!-- 2024 -->
+        <div class="relative flex flex-col md:flex-row md:items-center mb-12 fade-up">
+          <div class="md:w-1/2 md:pr-12 md:text-right pl-16 md:pl-0">
+            <div class="text-2xl font-bold mb-2" style="font-family: var(--font-heading); color: var(--color-primary);">2024</div>
+            <h3 class="font-semibold mb-1" style="color: var(--color-text);">行业标杆</h3>
+            <p class="text-sm" style="color: var(--color-text-light);">入选 Gartner 亚太区云服务标杆厂商，荣获国家高新技术企业认证，团队超 200 人</p>
+          </div>
+          <div class="absolute left-6 md:left-1/2 w-4 h-4 rounded-full border-4 border-white" style="background-color: var(--color-primary); transform: translate(-50%, 0); top: 4px; box-shadow: 0 0 0 2px var(--color-primary);"></div>
+          <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+        </div>
+
+        <!-- 2025 -->
+        <div class="relative flex flex-col md:flex-row md:items-center fade-up">
+          <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+          <div class="absolute left-6 md:left-1/2 w-4 h-4 rounded-full border-4 border-white" style="background-color: var(--color-primary); transform: translate(-50%, 0); top: 4px; box-shadow: 0 0 0 2px var(--color-primary);"></div>
+          <div class="md:w-1/2 md:pl-12 pl-16">
+            <div class="text-2xl font-bold mb-2" style="font-family: var(--font-heading); color: var(--color-primary);">2025</div>
+            <h3 class="font-semibold mb-1" style="color: var(--color-text);">全新征程</h3>
+            <p class="text-sm" style="color: var(--color-text-light);">发布新一代智算平台，累计服务企业超 500 家，正式启动海外市场拓展计划</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA ==================== -->
+  <section class="py-20 md:py-28" style="background-color: var(--color-bg-dark);">
+    <div class="container-custom text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 fade-up" style="font-family: var(--font-heading);">想了解更多？</h2>
+      <p class="text-white/60 text-lg mb-8 fade-up">欢迎联系我们，获取定制化解决方案</p>
+      <a href="contact.html" class="btn-primary text-lg px-8 py-4 fade-up">联系我们</a>
+    </div>
+  </section>
+
+  <!-- ==================== 页脚 ==================== -->
+  <footer class="py-16" style="background-color: var(--color-bg-dark); border-top: 1px solid rgba(255,255,255,0.05);">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div class="md:col-span-1">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-9 h-9 rounded-lg flex items-center justify-center text-white font-bold text-lg" style="background-color: var(--color-primary);">云</div>
+            <span class="text-lg font-semibold text-white" style="font-family: var(--font-heading);">云智科技</span>
+          </div>
+          <p class="text-white/50 text-sm leading-relaxed">以云计算和人工智能技术，助力企业实现数字化升级，释放数据价值。</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">产品服务</h4>
+          <ul class="space-y-2">
+            <li><a href="services.html" class="text-white/50 text-sm hover:text-white transition-colors">云计算平台</a></li>
+            <li><a href="services.html" class="text-white/50 text-sm hover:text-white transition-colors">智能数据分析</a></li>
+            <li><a href="services.html" class="text-white/50 text-sm hover:text-white transition-colors">AI 解决方案</a></li>
+            <li><a href="services.html" class="text-white/50 text-sm hover:text-white transition-colors">企业安全</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">关于我们</h4>
+          <ul class="space-y-2">
+            <li><a href="about.html" class="text-white/50 text-sm hover:text-white transition-colors">公司介绍</a></li>
+            <li><a href="about.html" class="text-white/50 text-sm hover:text-white transition-colors">核心团队</a></li>
+            <li><a href="cases.html" class="text-white/50 text-sm hover:text-white transition-colors">客户案例</a></li>
+            <li><a href="contact.html" class="text-white/50 text-sm hover:text-white transition-colors">联系我们</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">联系方式</h4>
+          <ul class="space-y-2 text-white/50 text-sm">
+            <li>北京市海淀区中关村科技园</li>
+            <li>电话：400-888-9999</li>
+            <li>邮箱：contact@yunzhi.tech</li>
+            <li>工作时间：周一至周五 9:00-18:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-8 text-center">
+        <p class="text-white/30 text-sm">&copy; 2025 云智科技. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../../src/js/main.js"></script>
+</body>
+</html>

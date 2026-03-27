@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>关于我们 — 璟庭·粤式私房菜</title>
+  <meta name="description" content="了解璟庭·粤式私房菜的品牌故事、主厨团队与烹饪理念。" />
+  <link rel="stylesheet" href="theme.css" />
+  <link rel="stylesheet" href="../../src/input.css" />
+  <style>
+    .philosophy-card {
+      text-align: center;
+      padding: 2.5rem 2rem;
+      border-radius: var(--radius-xl);
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      transition: all var(--transition-base);
+    }
+    .philosophy-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-xl);
+      border-color: var(--color-primary);
+    }
+    .philosophy-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--color-primary-50);
+      color: var(--color-primary);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== 导航栏 ========== -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+    <div class="container-custom flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="text-2xl font-bold" style="font-family: var(--font-heading); color: var(--color-primary);">璟庭</span>
+        <span class="text-sm hidden sm:inline nav-brand-text">粤式私房菜</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html" class="nav-link text-sm font-medium">首页</a>
+        <a href="about.html" class="nav-link active text-sm font-medium">关于我们</a>
+        <a href="contact.html" class="nav-link text-sm font-medium">联系我们</a>
+        <a href="contact.html" class="btn-primary text-sm">立即预约</a>
+      </div>
+      <button id="menu-btn" class="md:hidden p-2" aria-label="菜单">
+        <svg class="w-6 h-6 hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md border-t" style="border-color: var(--color-border);">
+      <div class="container-custom py-4 flex flex-col gap-3">
+        <a href="index.html" class="py-2 text-sm font-medium" style="color: var(--color-text-light);">首页</a>
+        <a href="about.html" class="py-2 text-sm font-medium" style="color: var(--color-text);">关于我们</a>
+        <a href="contact.html" class="py-2 text-sm font-medium" style="color: var(--color-text-light);">联系我们</a>
+        <a href="contact.html" class="btn-primary text-sm text-center mt-2">立即预约</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== 页面 Hero ========== -->
+  <section class="pt-32 pb-16 lg:pt-40 lg:pb-20" style="background-color: var(--color-bg-alt);">
+    <div class="container-custom text-center fade-up">
+      <p class="text-sm uppercase tracking-widest mb-4" style="color: var(--color-primary);">ABOUT US</p>
+      <h1 class="text-3xl lg:text-5xl font-bold mb-4" style="font-family: var(--font-heading);">关于璟庭</h1>
+      <div class="divider"></div>
+      <p class="text-lg max-w-2xl mx-auto" style="color: var(--color-text-light);">
+        二十六载匠心传承，只为呈现粤菜最纯粹的味道
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== 品牌故事 ========== -->
+  <section class="py-20 lg:py-28" style="background-color: var(--color-bg);">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <!-- 文字 -->
+        <div class="fade-left">
+          <p class="text-sm uppercase tracking-widest mb-4" style="color: var(--color-primary);">OUR STORY</p>
+          <h2 class="text-2xl lg:text-3xl font-bold mb-6" style="font-family: var(--font-heading);">品牌故事</h2>
+          <div class="divider" style="margin: 0 0 1.5rem;"></div>
+          <div class="space-y-4" style="color: var(--color-text-light); line-height: 1.9;">
+            <p>
+              1998年，璟庭创始人陈璟明先生怀揣对粤菜的热爱，在广州创办了第一家璟庭私房菜馆。从一间不起眼的小店，到如今珠江新城的地标级餐厅，璟庭始终坚持一个信念——用最好的食材，做最用心的菜。
+            </p>
+            <p>
+              「璟」取自「玉之光彩」，寓意我们对待每一道菜品如雕琢美玉般精心；「庭」则象征归家般的温暖与归属感。我们希望每一位踏入璟庭的宾客，都能感受到这份用心与温度。
+            </p>
+            <p>
+              二十六年来，璟庭团队走遍岭南大地，从潮汕的渔港到顺德的乡间，只为寻找最地道的食材与最传统的烹饪技法。我们相信，真正的美味，源于对传统的尊重与对品质的坚持。
+            </p>
+          </div>
+        </div>
+        <!-- 图片 -->
+        <div class="fade-right">
+          <div class="rounded-2xl overflow-hidden shadow-xl">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="璟庭餐厅" class="w-full h-[450px] object-cover" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 主厨介绍 ========== -->
+  <section class="py-20 lg:py-28" style="background-color: var(--color-bg-alt);">
+    <div class="container-custom">
+      <div class="text-center fade-up">
+        <p class="section-subtitle" style="color: var(--color-primary); margin-bottom: 0.5rem;">MASTER CHEF</p>
+        <h2 class="section-title">匠心主厨</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="max-w-3xl mx-auto">
+        <div class="card p-8 lg:p-12 fade-up">
+          <div class="flex flex-col sm:flex-row gap-8 items-center sm:items-start">
+            <!-- 主厨头像 -->
+            <div class="flex-shrink-0">
+              <div class="w-36 h-36 lg:w-44 lg:h-44 rounded-full overflow-hidden border-4" style="border-color: var(--color-primary);">
+                <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400&q=80" alt="陈伯铭主厨" class="w-full h-full object-cover" />
+              </div>
+            </div>
+            <!-- 主厨信息 -->
+            <div class="text-center sm:text-left">
+              <h3 class="text-2xl font-bold mb-1" style="font-family: var(--font-heading);">陈伯铭</h3>
+              <p class="text-sm mb-4" style="color: var(--color-primary);">行政总厨 / 粤菜大师</p>
+              <div class="space-y-3" style="color: var(--color-text-light); line-height: 1.8;">
+                <p>
+                  师从粤菜泰斗梁礼宏大师，从业四十余年，曾执掌多家米其林星级餐厅。陈伯铭大师深谙粤菜「清、鲜、嫩、滑」之精髓，擅长将传统技法与时令食材完美融合。
+                </p>
+                <p>
+                  2015年获颁「中国烹饪大师」称号，2019年率领璟庭团队荣获「亚洲50佳餐厅」提名。他始终秉持「以食为天，以味为本」的烹饪哲学，每道菜品都倾注了对食材的敬畏之心。
+                </p>
+              </div>
+              <!-- 荣誉标签 -->
+              <div class="flex flex-wrap gap-2 mt-6 justify-center sm:justify-start">
+                <span class="px-3 py-1 text-xs rounded-full font-medium" style="background: var(--color-primary-50); color: var(--color-primary);">中国烹饪大师</span>
+                <span class="px-3 py-1 text-xs rounded-full font-medium" style="background: var(--color-primary-50); color: var(--color-primary);">从业40年</span>
+                <span class="px-3 py-1 text-xs rounded-full font-medium" style="background: var(--color-primary-50); color: var(--color-primary);">亚洲50佳提名</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 餐厅理念 ========== -->
+  <section class="py-20 lg:py-28" style="background-color: var(--color-bg);">
+    <div class="container-custom">
+      <div class="text-center fade-up">
+        <p class="section-subtitle" style="color: var(--color-primary); margin-bottom: 0.5rem;">PHILOSOPHY</p>
+        <h2 class="section-title">我们的理念</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">从食材到餐桌，每一个环节都追求极致</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- 食材溯源 -->
+        <div class="philosophy-card fade-up" style="transition-delay: 0.1s;">
+          <div class="philosophy-icon">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3" style="font-family: var(--font-heading);">食材溯源</h3>
+          <p class="text-sm" style="color: var(--color-text-light); line-height: 1.8;">
+            每一份食材都有迹可循。从湛江的鲜活海鲜到清远的走地鸡，我们坚持原产地直采，确保食材的新鲜与品质。每周主厨亲自前往市场挑选时令食材。
+          </p>
+        </div>
+        <!-- 匠心烹饪 -->
+        <div class="philosophy-card fade-up" style="transition-delay: 0.2s;">
+          <div class="philosophy-icon">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3" style="font-family: var(--font-heading);">匠心烹饪</h3>
+          <p class="text-sm" style="color: var(--color-text-light); line-height: 1.8;">
+            师徒相传的烹饪技法，每一道菜都经过数十道工序精心制作。我们尊重传统，但不拘泥于传统，在经典中融入创新，让粤菜焕发新的生命力。
+          </p>
+        </div>
+        <!-- 雅致空间 -->
+        <div class="philosophy-card fade-up" style="transition-delay: 0.3s;">
+          <div class="philosophy-icon">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3" style="font-family: var(--font-heading);">雅致空间</h3>
+          <p class="text-sm" style="color: var(--color-text-light); line-height: 1.8;">
+            由知名设计师操刀的用餐空间，将东方美学与现代设计融为一体。十二间风格各异的私密包间，为每一位宾客提供专属、安静、尊贵的用餐体验。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 预约 CTA ========== -->
+  <section class="py-20 lg:py-24" style="background: linear-gradient(135deg, #1c1108 0%, #44280b 100%);">
+    <div class="container-custom text-center text-white fade-up">
+      <h2 class="text-3xl lg:text-4xl font-bold mb-6" style="font-family: var(--font-heading);">诚邀莅临</h2>
+      <div class="divider" style="background: var(--color-primary-light);"></div>
+      <p class="text-lg opacity-80 mb-8 max-w-xl mx-auto">期待与您共享一场味觉与文化的盛宴</p>
+      <a href="contact.html" class="btn-primary px-10 py-4 text-lg" style="background-color: var(--color-primary); font-size: 1.125rem;">
+        立即预约
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== 页脚 ========== -->
+  <footer class="py-16" style="background-color: var(--color-bg-dark);">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div>
+          <h3 class="text-xl font-bold mb-4" style="font-family: var(--font-heading); color: var(--color-primary-light);">璟庭</h3>
+          <p class="text-sm leading-relaxed" style="color: var(--color-text-muted);">
+            璟庭·粤式私房菜，始创于1998年，以传承百年粤菜精髓为己任，甄选时令食材，匠心烹制每一道佳肴。
+          </p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4 text-white">餐厅地址</h4>
+          <p class="text-sm leading-relaxed" style="color: var(--color-text-muted);">
+            广州市天河区珠江新城<br />
+            花城大道68号璟庭大厦3楼
+          </p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4 text-white">营业时间</h4>
+          <ul class="text-sm space-y-2" style="color: var(--color-text-muted);">
+            <li>午餐：11:30 - 14:00</li>
+            <li>晚餐：17:30 - 22:00</li>
+            <li>周一至周日</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4 text-white">联系我们</h4>
+          <ul class="text-sm space-y-2" style="color: var(--color-text-muted);">
+            <li>电话：020-8888-6666</li>
+            <li>邮箱：reserve@jingting.com</li>
+            <li>微信：jingting_canton</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 text-center text-sm" style="border-top: 1px solid rgba(255,255,255,0.1); color: var(--color-text-muted);">
+        &copy; 2026 璟庭·粤式私房菜 版权所有 &nbsp;|&nbsp; 粤ICP备XXXXXXXX号
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../../src/js/main.js"></script>
+</body>
+</html>
