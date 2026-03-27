@@ -5,9 +5,13 @@ import fs from 'fs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
+// 构建入口
+const input = {
+  main: resolve(__dirname, 'index.html'),
+}
+
 // 扫描每个站点目录下的所有 HTML 文件作为构建入口
 const sites = ['restaurant', 'beauty', 'tech']
-const input = {}
 
 for (const site of sites) {
   const dir = resolve(__dirname, `sites/${site}`)

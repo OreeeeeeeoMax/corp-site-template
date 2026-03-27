@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>网站作品集</title>
+  <link rel="stylesheet" href="src/input.css" />
+  <style>
+    body { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #0f172a; }
+  </style>
+</head>
+<body>
+  <div class="text-center px-6">
+    <h1 class="text-3xl md:text-4xl font-bold text-white mb-4" style="font-family: var(--font-heading);">网站作品集</h1>
+    <p class="text-gray-400 mb-12 text-lg">精选企业官网案例展示</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+      <!-- 餐厅 -->
+      <a href="sites/restaurant/" class="group rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-amber-500/50 transition-all duration-300 hover:-translate-y-1">
+        <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80');"></div>
+        <div class="p-6">
+          <h2 class="text-white text-lg font-bold mb-2" style="font-family: var(--font-heading);">璟庭·粤式私房菜</h2>
+          <p class="text-gray-400 text-sm">高端餐厅官网 · 金色主题</p>
+          <span class="inline-block mt-4 text-amber-400 text-sm font-medium group-hover:translate-x-1 transition-transform">查看案例 →</span>
+        </div>
+      </a>
+      <!-- 医美 -->
+      <a href="sites/beauty/" class="group rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-pink-500/50 transition-all duration-300 hover:-translate-y-1">
+        <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=600&q=80');"></div>
+        <div class="p-6">
+          <h2 class="text-white text-lg font-bold mb-2" style="font-family: var(--font-heading);">悦颜医疗美容</h2>
+          <p class="text-gray-400 text-sm">医美诊所官网 · 粉色主题</p>
+          <span class="inline-block mt-4 text-pink-400 text-sm font-medium group-hover:translate-x-1 transition-transform">查看案例 →</span>
+        </div>
+      </a>
+      <!-- 科技 -->
+      <a href="sites/tech/" class="group rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-1">
+        <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80');"></div>
+        <div class="p-6">
+          <h2 class="text-white text-lg font-bold mb-2" style="font-family: var(--font-heading);">云智科技</h2>
+          <p class="text-gray-400 text-sm">科技公司官网 · 蓝色主题</p>
+          <span class="inline-block mt-4 text-blue-400 text-sm font-medium group-hover:translate-x-1 transition-transform">查看案例 →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+  <script type="module" src="src/js/main.js"></script>
+</body>
+</html>
