@@ -1,28 +1,36 @@
 /* ============================================
-   科技公司主题 — 蓝色系
+   科技公司主题 — 蓝色系 · 现代专业
    ============================================ */
 :root {
+  /* 主色板 */
   --color-primary: #2563eb;
   --color-primary-light: #3b82f6;
   --color-primary-dark: #1e40af;
   --color-primary-50: #eff6ff;
   --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
 
-  --color-accent: #f59e0b;
-  --color-accent-light: #fbbf24;
+  /* 点缀色 — 电光青色 */
+  --color-accent: #0d9488;
+  --color-accent-light: #14b8a6;
 
+  /* 背景 */
   --color-bg: #ffffff;
   --color-bg-alt: #f8fafc;
   --color-bg-dark: #0f172a;
 
+  /* 文字 */
   --color-text: #1e293b;
   --color-text-light: #64748b;
   --color-text-muted: #94a3b8;
   --color-border: #e2e8f0;
 
-  --font-heading: 'Noto Serif SC', serif;
+  /* 字体 — DM Sans 现代风格，标题用无衬线 */
+  --font-display: 'DM Sans', sans-serif;
+  --font-heading: 'Noto Sans SC', system-ui, sans-serif;
   --font-body: 'Noto Sans SC', system-ui, sans-serif;
 
+  /* 圆角 */
   --radius-xl: 0.75rem;
   --radius-2xl: 1rem;
 }

@@ -1,28 +1,36 @@
 /* ============================================
-   医美主题 — 粉色/白色系
+   医美主题 — 粉色/玫瑰色系 · 优雅精致
    ============================================ */
 :root {
+  /* 主色板 */
   --color-primary: #db2777;
   --color-primary-light: #ec4899;
   --color-primary-dark: #be185d;
   --color-primary-50: #fdf2f8;
   --color-primary-100: #fce7f3;
+  --color-primary-200: #fbcfe8;
 
-  --color-accent: #be185d;
-  --color-accent-light: #ec4899;
+  /* 点缀色 — 深玫瑰 */
+  --color-accent: #9f1239;
+  --color-accent-light: #be185d;
 
+  /* 背景 */
   --color-bg: #ffffff;
-  --color-bg-alt: #fdf2f8;
+  --color-bg-alt: #fef7f9;
   --color-bg-dark: #1a0a14;
 
+  /* 文字 */
   --color-text: #1e1b2e;
   --color-text-light: #6b7280;
   --color-text-muted: #9ca3af;
-  --color-border: #f3e8ff;
+  --color-border: #f3e8ef;
 
+  /* 字体 — Cormorant Garamond 优雅风格 */
+  --font-display: 'Cormorant Garamond', serif;
   --font-heading: 'Noto Serif SC', serif;
   --font-body: 'Noto Sans SC', system-ui, sans-serif;
 
+  /* 圆角 */
   --radius-xl: 1.25rem;
   --radius-2xl: 2rem;
 }

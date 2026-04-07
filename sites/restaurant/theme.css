@@ -1,28 +1,36 @@
 /* ============================================
-   餐厅主题 — 金色/棕色系
+   餐厅主题 — 金色/棕色系 · 奢华编辑风格
    ============================================ */
 :root {
+  /* 主色板 */
   --color-primary: #b45309;
   --color-primary-light: #d97706;
   --color-primary-dark: #92400e;
   --color-primary-50: #fffbeb;
   --color-primary-100: #fef3c7;
+  --color-primary-200: #fde68a;
 
+  /* 点缀色 — 深棕铜色 */
   --color-accent: #78350f;
   --color-accent-light: #92400e;
 
-  --color-bg: #fffbf5;
-  --color-bg-alt: #fef3c7;
-  --color-bg-dark: #1c1108;
+  /* 背景 — 温暖的奶油白 */
+  --color-bg: #fffcf7;
+  --color-bg-alt: #fef7ed;
+  --color-bg-dark: #1a1008;
 
+  /* 文字 — 更高对比度 */
   --color-text: #1c1108;
-  --color-text-light: #78716c;
+  --color-text-light: #57534e;
   --color-text-muted: #a8a29e;
   --color-border: #e7e5e4;
 
+  /* 字体 — Playfair Display 编辑风格 */
+  --font-display: 'Playfair Display', serif;
   --font-heading: 'Noto Serif SC', serif;
   --font-body: 'Noto Sans SC', system-ui, sans-serif;
 
+  /* 圆角 */
   --radius-xl: 1rem;
   --radius-2xl: 1.5rem;
 }

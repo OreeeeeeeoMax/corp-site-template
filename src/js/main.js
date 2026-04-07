@@ -1,10 +1,10 @@
 /**
- * 公共 JS — 导航栏滚动效果 + 滚动动画 + 数字递增
+ * 公共 JS — 导航栏滚动效果 + 滚动动画 + 数字递增 + 视差
  * 每个页面通过 <script src="../../src/js/main.js"></script> 引入
  */
 
 // ============================
-// 导航栏：滚动变色 + 移动端菜单
+// 导航栏：滚动变色 + 移动端全屏菜单
 // ============================
 function initNavbar() {
   const nav = document.getElementById('navbar')
@@ -24,23 +24,27 @@ function initNavbar() {
   window.addEventListener('scroll', handleScroll)
   handleScroll()
 
-  // 移动端菜单切换
+  // 移动端菜单切换（全屏暗色菜单，用 .show 类控制）
   if (menuBtn && mobileMenu) {
     menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden')
-      // 切换图标
-      const icon = menuBtn.querySelector('svg')
-      if (mobileMenu.classList.contains('hidden')) {
-        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>'
+      const isOpen = mobileMenu.classList.contains('show')
+      if (isOpen) {
+        mobileMenu.classList.remove('show')
+        document.body.style.overflow = ''
+        menuBtn.querySelector('svg').innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>'
       } else {
-        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>'
+        mobileMenu.classList.remove('hidden')
+        mobileMenu.classList.add('show')
+        document.body.style.overflow = 'hidden'
+        menuBtn.querySelector('svg').innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>'
       }
     })
+
     mobileMenu.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden')
-        const icon = menuBtn.querySelector('svg')
-        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>'
+        mobileMenu.classList.remove('show')
+        document.body.style.overflow = ''
+        menuBtn.querySelector('svg').innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>'
       })
     })
   }
@@ -52,22 +56,19 @@ function initNavbar() {
 function initScrollAnimations() {
   const observer = new IntersectionObserver(
     (entries) => {
-      entries.forEach((entry, i) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // 添加延迟实现错落效果
-          setTimeout(() => {
-            entry.target.classList.add('visible')
-          }, i * 100)
+          entry.target.classList.add('visible')
           observer.unobserve(entry.target)
         }
       })
     },
-    { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+    { threshold: 0.1, rootMargin: '0px 0px -80px 0px' }
   )
 
-  document.querySelectorAll('.fade-up, .fade-left, .fade-right, .scale-in').forEach(el => {
-    observer.observe(el)
-  })
+  document.querySelectorAll(
+    '.fade-up, .fade-left, .fade-right, .scale-in, .blur-reveal, .line-draw'
+  ).forEach(el => observer.observe(el))
 }
 
 // ============================
@@ -119,6 +120,22 @@ function initSmoothScroll() {
 }
 
 // ============================
+// Hero 视差滚动效果
+// ============================
+function initParallax() {
+  const heroes = document.querySelectorAll('.hero')
+  if (!heroes.length) return
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY
+    heroes.forEach(hero => {
+      // 背景图缓慢上移
+      hero.style.backgroundPositionY = `${scrollY * 0.3}px`
+    })
+  }, { passive: true })
+}
+
+// ============================
 // 初始化
 // ============================
 document.addEventListener('DOMContentLoaded', () => {
@@ -126,4 +143,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations()
   animateCounters()
   initSmoothScroll()
+  initParallax()
 })
